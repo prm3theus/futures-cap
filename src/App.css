@@ -1,0 +1,175 @@
+#app {
+    text-align: right;
+    height: 100vh;
+}
+
+body {
+    color: #111 !important;
+}
+
+.font {}
+
+.light-table {
+    color: white !important;
+}
+
+.ui[class*="very basic"] {
+    font-family: 'Consolas';
+}
+
+.ui.celled.table tr td {
+    text-align: center;
+
+}
+
+.recharts-wrapper {
+    margin: auto !important;
+}
+
+.dark[class*="darkdark"] {
+    font-family: 'Consolas' !important;
+    background: #222 !important;
+}
+
+.ui[class*="very basic"].table:not(.sortable):not(.striped) thead tr:first-child th {
+    text-align: center;
+}
+
+/*.ui[class*="item"] {}*/
+
+div.dark div.ui.tabular.menu a.active.item {
+    font-family: 'Consolas' !important;
+    background: #222 !important;
+    color: #fff;
+}
+
+div.dark div.ui.tabular.menu a.item {
+    background: #222 !important;
+    color: #fff;
+}
+
+div.light div.ui.tabular.menu a.active.item {
+    background: #fafafa !important;
+    color: #222;
+    /*added here*/
+}
+
+div.light div.ui.tabular.menu a.item {
+    color: #222;
+}
+
+/*div.ui.tabular.menu.dark a.active.item {}*/
+
+div.ui.tabular.menu a.item {
+    font-family: 'Consolas' !important;
+}
+
+@import "../node_modules/semantic-ui-css/semantic.min.css"
+
+.App-logo {
+    animation: App-logo-spin infinite 20s linear;
+    height: 40vmin;
+    pointer-events: none;
+}
+
+.App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+.App-link {
+    color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.dark-mode {
+    background-color: #eee !important;
+    color: #eee !important;
+}
+
+.light-mode {
+    background-color: #111 !important;
+    color: #eee !important;
+    height: 100vh;
+}
+
+.segment-dark{
+    background-color: #eee !important;
+}
+
+.ui.horizontal.segments.dark {
+    background: #222;
+}
+.ui.horizontal.segments.light {
+    background: #eee !important;
+}
+
+/*.light-mode a body.dark-mode a {
+    color: #111;
+}
+
+body.light-mode a body.dark-mode button {
+    background-color: #eee;
+    color: #111;
+}
+
+body.light-mode a body.light-mode {
+    background-color: #eee;
+    color: #111;
+}
+
+body.light-mode a body.light-mode a {
+    color: #111;
+}
+
+body.light-mode a body.light-mode button {
+    background-color: #111;
+    color: #eee;
+}
+
+body.light-mode button {
+    background-color: #111;
+    color: #eee;
+}
+
+body.dark-mode {
+    background-color: #111;
+    color: #eee;
+}
+
+body.dark-mode a {
+    color: #111;
+}*/
+body.dark-mode button {
+    background-color: #eee;
+    color: #111;
+}
+
+body.light-mode {
+    background-color: #eee;
+    color: #111;
+}
+
+body.light-mode a {
+    color: #111;
+}
+
+body.light-mode button {
+    background-color: #111;
+    color: #eee;
+}
