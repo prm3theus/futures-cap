@@ -48,42 +48,7 @@ const Title = () => {
 
 function App (props) {
 
-  // state = {
-  //   isDark: false
-  // }
-
   let _isDark = false;
-
-
-  // const clicked = async () => {
-
-  //   console.log('clicked')
-
-  //   let i = 0;
-
-  //   while(true){
-  //     try{
-  //       let val = await contract.endpoints(i);
-  //       endpoints[val] = []
-  //       console.log(val)
-  //       i++;
-  //     }catch(e){
-  //       console.log(e)
-
-  //       break;
-  //     }
-  //   }
-
-  //   for(var point in endpoints){
-  //     const status = await contract.getStatus(point);
-  //     endpoints[point] = status;
-  //   }
-
-  //   console.log(endpoints)
-    
-  //   console.log('BROKE')
-  // }
-
 
   const renderFuturesTable = () => {
     props.store.uiStore.changePanel('futures')
@@ -107,17 +72,6 @@ function App (props) {
         return ( <PortalList /> )
     }
 
-    // renderGoodsTable = () => {
-
-    //     if ( this.props.store.networkStore.isLoading ) {
-    //         return <Loader size="huge" active />
-    //     }
-
-    //     return (
-    //         <MarketList />
-    //     )
-    // }
-
   const handleClick = () => {
         props.store.changeTheme( 'dark' )
         _isDark = !_isDark
@@ -132,23 +86,10 @@ function App (props) {
 
   const handleChange = ( e, value ) => {
         e.persist();
-        // console.log( e );
-        // console.log( e.target.textContent );
         props.store.networkStore.setFilterByCity( e.target.textContent )
-        // console.log( value );
-        // console.log( e.target.key );
-        // console.log( e.target.reactKey );
-        // console.log( e.nativeEvent );
-        // console.log( e.nativeEvent.text );
-        // console.log( e.nativeEvent.value );
-        // console.log( JSON.stringify( e.target ) );
-        // console.log( e.target.value );
     }
 
 
-
-  // render () {
-     // const { goodsList } = this.props.store.networkStore
         console.log( 'RENDERING' );
         const isDark = _isDark ? "light-mode" : "dark-mode"
         // console.log( isDark );
@@ -171,9 +112,6 @@ function App (props) {
           <br />
             <Header className={{isDark}} size="large" align="center" style={ {color: defaultTheme[props.theme.mode]}}>
               <Title />
-              {/*Bring Entrance 🔥 to: <Dropdown placeholder='All Cities' onChange={handleChange} options={cityOptions} value={props.store.networkStore.city}/>*/}
-              {/*Bring the Light🔥 { this.props.store.marketStore.city }
-<Dropdown options={cityOptions}/>*/}
             </Header>
 
               <Button onClick={() => themeToggle.toggle()}>
@@ -214,17 +152,5 @@ function App (props) {
         )
   // }
 }
-
-// @withTheme
-// @inject( "store" )
-// @observer
-
-// function App(props){
-//   return (
-//       <Header  size="large" align="center">
-//         Bring Entrance 🔥 to: <Dropdown placeholder='All Cities' options={cityOptions}/>
-//       </Header>
-//     )
-// }
 
 export default inject( "store" )(observer(withTheme(App)));
